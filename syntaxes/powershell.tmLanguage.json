@@ -1,0 +1,23 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.betterpowershell",
+	"injectionSelector": "L:source.powershell",
+	"patterns": [
+		{
+			"begin": "^(?:\\s*+)(?i)(function|filter|configuration|workflow)\\s+(?:(global|local|script|private):)?((?:\\p{L}|\\d|_|-|\\.)+)",
+			"beginCaptures": {
+				"1": {
+					"name": "storage.type.function.powershell"
+				},
+				"2": {
+					"name": "storage.modifier.scope.powershell"
+				},
+				"3": {
+					"name": "entity.name.function.powershell"
+				}
+			},
+			"name": "meta.function.powershell",
+			"end": "(?=\\{|\\()"
+		}
+	]
+}

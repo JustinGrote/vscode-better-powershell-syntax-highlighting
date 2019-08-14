@@ -3,7 +3,7 @@
     "displayName": "Better Powershell Syntax Highlighting",
     "description": "Provides Powershell Syntax Highlighting Enhancements",
     "publisher": "justin-grote",
-    "version": "0.0.2",
+    "version": "0.0.1",
     "engines": {
         "vscode": "^1.37.0"
     },
