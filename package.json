@@ -1,0 +1,35 @@
+{
+    "name": "better-powershell-syntax-highlighting",
+    "displayName": "Better Powershell Syntax Highlighting",
+    "description": "Provides Powershell Syntax Highlighting Enhancements",
+    "publisher": "justin-grote",
+    "version": "0.0.2",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Formatters",
+        "Themes"
+    ],
+    "keywords": [
+        "Powershell",
+        "function"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "contributes": {
+        "grammars": [
+            {
+                "scopeName": "source.betterpowershell",
+                "path": "./syntaxes/powershell.tmLanguage.json",
+                "injectTo": [
+                    "source.powershell"
+                ]
+            }
+        ]
+    }
+}
